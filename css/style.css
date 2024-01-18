@@ -24,6 +24,9 @@ a:hover {
 h1, h2, h3, h4, h5, h6 {
   font-family: "Raleway", sans-serif;
 }
+.logo-nav{
+  border-radius: 50%;
+}
 
 
 .logo {
@@ -80,24 +83,24 @@ h1, h2, h3, h4, h5, h6 {
   top: -40px;
 }
 
-#topbar .Location-info a {
+#topbar .Contact-info a {
   line-height: 1;
   color: #444444;
   transition: 0.3s;
 }
 
-#topbar .Location-info a:hover {
+#topbar .Contact-info a:hover {
   color: #1977cc;
 }
 
-#topbar .Location-info i {
+#topbar .Contact-info i {
   color: #1977cc;
   padding-right: 6px;
   margin-left: 15px;
   line-height: 0;
 }
 
-#topbar .Location-info i:first-child {
+#topbar .Contact-info i:first-child {
   margin-left: 0;
 }
 
@@ -248,6 +251,20 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .read-more-btn {
+  background: transparent;
+  border: 2px #fcec6d solid;
+  color: #1977cc;
+  border-radius: 2%;
+  padding: 8px 25px;
+  white-space: nowrap;
+  transition: 0.3s;
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+  display: inline-block;
+}
+.submit-btn {
+  margin-top: 10px;
   background: transparent;
   border: 2px #fcec6d solid;
   color: #1977cc;
@@ -1281,58 +1298,60 @@ text-align: center;
 /*--------------------------------------------------------------
 # getinvolved
 --------------------------------------------------------------*/
+/* ==== getinvolved using Bootstrap === */
 
-.getinvolved .php-email-form {
+#getinvolved .card {
+  border-radius: 2px;
+  min-height: 100%;
+}
+
+#getinvolved .heading-border {
+  position: absolute;
   width: 100%;
+  top: 60%;
 }
 
-.getinvolved .php-email-form .form-group {
-  padding-bottom: 8px;
+#getinvolved .card .user-picture img {
+  width: 120px;
+  height: auto;
+  position: absolute;
+  top: -15%;
+  right: 10%;
+  background: white;
+  padding: 10px;
+  border-radius: 5%;
+
 }
 
+#getinvolved .card .user-content .user-name {
+  margin-right: 150px;
 
-.getinvolved .php-email-form input, .getinvolved .php-email-form textarea, .getinvolved .php-email-form select {
-  border-radius: 0;
-  box-shadow: none;
-  font-size: 14px;
-  padding: 10px !important;
 }
 
-.getinvolved .php-email-form input:focus, .getinvolved .php-email-form textarea:focus, .getinvolved .php-email-form select:focus {
-  border-color: #1977cc;
+.user-content h5{
+  padding-top: 60px;
+  color: #fcec6d;
+  font-size: 26px;
+  font-weight: 600;
 }
-
-.getinvolved .php-email-form input, .getinvolved .php-email-form select {
-  height: 44px;
-}
-
-.getinvolved .php-email-form textarea {
-  padding: 10px 12px;
-}
-
-.getinvolved .php-email-form button[type="submit"] {
-  background: #1977cc;
-  border: 0;
-  padding: 10px 35px;
-  color: #fff;
-  transition: 0.4s;
-  border-radius: 2%;
-}
-
-.getinvolved .php-email-form button[type="submit"]:hover {
-  border: 2px #fcec6d solid;
-  background: transparent;
-  color: #1977cc;
+.contact-email{
+  color: #fcec6d;
+  font-weight: 600;
+  text-decoration: underline;
 }
 /*--------------------------------------------------------------
-# Location
+# Contact
 --------------------------------------------------------------*/
-.Location .info {
+.Contact{
+  padding-bottom: 0px;
+  
+}
+.Contact .info {
   width: 100%;
   background: #fff;
 }
 
-.Location .info i {
+.Contact .info i {
   font-size: 20px;
   color: #1977cc;
   float: left;
@@ -1346,7 +1365,7 @@ text-align: center;
   transition: all 0.3s ease-in-out;
 }
 
-.Location .info h4 {
+.Contact .info h4 {
   padding: 0 0 0 60px;
   font-size: 22px;
   font-weight: 600;
@@ -1354,46 +1373,46 @@ text-align: center;
   color: #2c4964;
 }
 
-.Location .info p {
+.Contact .info p {
   padding: 0 0 0 60px;
   margin-bottom: 0;
   font-size: 14px;
   color: #4b7dab;
 }
 
-.Location .info .email, .Location .info .phone {
+.Contact .info .email, .Contact .info .phone {
   margin-top: 40px;
 }
 
-.Location .info .email:hover i, .Location .info .address:hover i, .Location .info .phone:hover i {
+.Contact .info .email:hover i, .Contact .info .address:hover i, .Contact .info .phone:hover i {
   background: #fcec6d;
   color: #fff;
 }
 
-.Location .php-email-form {
+.Contact .php-email-form {
   width: 100%;
   background: #fff;
 }
 
-.Location .php-email-form .form-group {
+.Contact .php-email-form .form-group {
   padding-bottom: 8px;
 }
 
-.Location .php-email-form input, .Location .php-email-form textarea {
+.Contact .php-email-form input, .Contact .php-email-form textarea {
   border-radius: 0;
   box-shadow: none;
   font-size: 14px;
 }
 
-.Location .php-email-form input {
+.Contact .php-email-form input {
   height: 44px;
 }
 
-.Location .php-email-form textarea {
+.Contact .php-email-form textarea {
   padding: 10px 12px;
 }
 
-.Location .php-email-form button[type="submit"] {
+.Contact .php-email-form button[type="submit"] {
   background: #1977cc;
   border: 0;
   padding: 10px 35px;
@@ -1403,11 +1422,17 @@ text-align: center;
 }
 
 
-.Location .php-email-form button[type="submit"]:hover {
+.Contact .php-email-form button[type="submit"]:hover {
   border: 2px #fcec6d solid;
   background: transparent;
   color: #1977cc;
 }
+
+.form-control {
+  border-radius: 0px;
+  
+}
+
 
 @-webkit-keyframes animate-loading {
   0% {

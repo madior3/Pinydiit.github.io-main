@@ -124,9 +124,9 @@
    * Scroll with ofset on page load with hash links in the url
    */
   window.addEventListener('load', () => {
-    if (window.location.hash) {
-      if (select(window.location.hash)) {
-        scrollto(window.location.hash)
+    if (window.Contact.hash) {
+      if (select(window.Contact.hash)) {
+        scrollto(window.Contact.hash)
       }
     }
   });
@@ -155,14 +155,6 @@ setInterval(changeImage, interval);
     selector: '.glightbox'
   });
 
-  /**subscription alert */
-  function subscribe(event) {
-    event.preventDefault();
-    const email = document.querySelector('input[name="email"]').value;
-    // code to send an email to "dengjokdeng@gmail.com"
-    document.getElementById("subscribe-message").innerHTML = "Thank You For Subscribing!";
-    alert("Thank You For Subscribing!");
-  }
 
   /**
    * Back to top button
@@ -220,9 +212,9 @@ $(".img-overlay").click(function(event) {
   // Prevents default behavior
   event.preventDefault();
   // Adds href attribute to variable
-  var imageLocation = $(this).prev().attr("href");
+  var imageContact = $(this).prev().attr("href");
   // Add the image src to $image
-  $image.attr("src", imageLocation);
+  $image.attr("src", imageContact);
   // Fade in the overlay
   $overlay.fadeIn("slow");
 });
@@ -237,9 +229,9 @@ $overlay.click(function() {
 $nextButton.click(function(event) {
   // Hide the current image
   $("#overlay img").hide();
-  // Overlay image location
+  // Overlay image Contact
   var $currentImgSrc = $("#overlay img").attr("src");
-  // Image with matching location of the overlay image
+  // Image with matching Contact of the overlay image
   var $currentImg = $('#image-gallery img[src="' + $currentImgSrc + '"]');
   // Finds the next image
   var $nextImg = $($currentImg.closest(".image").next().find("img"));
@@ -261,9 +253,9 @@ $nextButton.click(function(event) {
 $prevButton.click(function(event) {
   // Hide the current image
   $("#overlay img").hide();
-  // Overlay image location
+  // Overlay image Contact
   var $currentImgSrc = $("#overlay img").attr("src");
-  // Image with matching location of the overlay image
+  // Image with matching Contact of the overlay image
   var $currentImg = $('#image-gallery img[src="' + $currentImgSrc + '"]');
   // Finds the next image
   var $nextImg = $($currentImg.closest(".image").prev().find("img"));
@@ -316,32 +308,30 @@ startSlideShow();
 
 
 //email form//
-function sendMail(){
+function sendMail() {
   var params = {
     name: document.getElementById("name").value,
     email: document.getElementById("email").value,
-    phone: document.getElementById("phone").value,
+    subject: document.getElementById("subject").value,
     message: document.getElementById("message").value,
-   
   };
 
   const serviceID = "service_c4rzl44";
-const templateID = "template_yaytzde"
+  const templateID = "template_yaytzde";
 
-emailjs.send(serviceID,templateID,params)
-.then(
-  res =>{
-    document.getElementById("name").value = "";
-    document.getElementById("email").value = "";
-    document.getElementById("phone").value = "";
-    document.getElementById("message").value = "";
-    console.log(res);
-    alert("Your message sent successfully");
-  }
-)
+    emailjs.send(serviceID, templateID, params)
+    .then(res=>{
+        document.getElementById("name").value = "";
+        document.getElementById("subject").value = "";
+        document.getElementById("email").value = "";
+        document.getElementById("message").value = "";
+        console.log(res);
+        alert("Your message sent successfully!")
 
-.catch((err) => console.log(err));
+    })
+    .catch(err=>console.log(err));
 }
+
 
 
 
