@@ -27,8 +27,26 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
   <link rel="stylesheet" href="lightbox2/dist/css/lightbox.min.css" />
   <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+  
+  <!---emailjs-->
+  <script type="text/javascript"
+  src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+</script>
 
 
+<!----contact-->
+<script type="text/javascript">
+  (function () {
+    emailjs.init("wSoz6nQnGIfLiLaBB");
+  })();
+</script>
+
+<!---subscribe-->
+<script type="text/javascript">
+  (function () {
+    emailjs.init("wSoz6nQnGIfLiLaBB");
+  })();
+</script>
 </head>
 
 <body>
@@ -44,10 +62,9 @@
         <i class="bi bi-phone"></i> +1605-940-5081 
       </div>
       <div class="d-none d-lg-flex social-links align-items-center">
-        <a href="https://www.facebook.com/william.agany/" class="facebook" target="_blank" rel="noopener noreferrer"><i class="bi bi-facebook"></i></a>
-        <a href="#" class="instagram" target="_blank" rel="noopener noreferrer"><i class="bi bi-instagram"></i></a>
-        <a href="#" class="twitter" target="_blank" rel="noopener noreferrer"><i class="bi bi-twitter"></i></a> 
-        <a href="#" class="youtube" target="_blank" rel="noopener noreferrer"><i class="bi bi-youtube"></i></a>
+        <a href="https://www.facebook.com/profile.php?id=61555936580106" class="facebook" target="_blank" rel="noopener noreferrer"><i class="bi bi-facebook"></i></a>
+        <a href="https://www.instagram.com/pinydiit/" class="instagram" target="_blank" rel="noopener noreferrer"><i class="bi bi-instagram"></i></a>
+        <a href="https://www.youtube.com/channel/UCRlMJcLxBP6lZtt1KXg1ZtA" class="youtube" target="_blank" rel="noopener noreferrer"><i class="bi bi-youtube"></i></a>
       </div>
     </div>
   </div>
@@ -68,9 +85,10 @@
           <li><a class="nav-link scrollto" href="./index.html#Our-Programs">Programs</a></li>
        
           <li><a class="nav-link scrollto" href="./index.html#News-Events">News & Events</a></li>
-          <li><a class="nav-link scrollto" href="#getinvolved">How To Involved </a></li>
-          <li><a class="nav-link scrollto" href="./who.html#Contact">Contact</a></li>
+          <li><a class="nav-link scrollto" href="#getinvolved">How To Involve </a></li>
+          
           <li><a class="nav-link scrollto active" href="#">Gallery</a></li>
+          <li><a class="nav-link scrollto" href="./who.html#Contact">Contact Us</a></li>
           
         </ul> 
         <i class="bi bi-list mobile-nav-toggle"></i>
@@ -332,14 +350,12 @@
                 <strong>Email:</strong> pf@pinydiitfoundation.org<br> OR pinydiitfoundation@gmail.com
               </p>
               <div class="social-links mt-3">
-                <a href="https://www.facebook.com/william.agany/" class="facebook"><i class="bx bxl-facebook"></i></a>
-                <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
-                <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
-                <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+                <a href="https://www.facebook.com/profile.php?id=61555936580106" class="facebook"><i class="bx bxl-facebook"></i></a>
+                <a href="https://www.instagram.com/pinydiit/" class="instagram"><i class="bx bxl-instagram"></i></a>
+                <a href="https://www.youtube.com/channel/UCRlMJcLxBP6lZtt1KXg1ZtA" class="google-plus"><i class="bx bxl-youtube"></i></a>
               </div>
             </div>
           </div>
-
           <div class="col-lg-2 col-md-6 footer-links">
             <h4>Useful Links</h4>
             <ul>
@@ -362,10 +378,17 @@
           <div class="col-lg-4 col-md-6 footer-newsletter">
             <h4>Our Newsletter</h4>
             <p>Thank you for your continued support, and we look forward to sharing our progress with you in the coming months.</p>
-            <form action="mail.php" method="POST"  autocomplete="on">
-              <input type="email" name="email" placeholder="Please Enter Your Email"><input type="submit" value="Subscribe">
-            </form>
-            <p><span>Thank You For Subscribing!</span></p>
+            
+            <div class="form-group" autocomplete="on">
+              <h5 for="from_email"></h5>
+              <input
+                type="from_email"
+                class="form-control"
+                id="from_email"
+                placeholder="Please enter your email"
+              />
+            </div>
+            <button class="submit-btn1" onclick="sendMail()">Subscribe</button>
 
           </div>
 

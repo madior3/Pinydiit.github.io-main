@@ -1,4 +1,15 @@
+/**======Preloader======== */
 
+    // Simulate content loading
+    document.addEventListener("DOMContentLoaded", function() {
+      setTimeout(function() {
+        // Hide preloader
+        document.querySelector('.preloader').style.display = 'none';
+
+        // Show content
+        document.querySelector('.content').style.display = 'block';
+      }, 3000); // You can adjust the delay according to your needs
+    });
 (function() {
   "use strict";
 
@@ -316,8 +327,8 @@ function sendMail() {
     message: document.getElementById("message").value,
   };
 
-  const serviceID = "service_c4rzl44";
-  const templateID = "template_yaytzde";
+  const serviceID = "service_4pqizya";
+  const templateID = "template_jg2oyie";
 
     emailjs.send(serviceID, templateID, params)
     .then(res=>{
@@ -333,5 +344,46 @@ function sendMail() {
 }
 
 
+//subscribe//
+
+
+//email form//
+function sendMail() {
+  var params = { 
+   from_email: document.getElementById("from_email").value,
+  };
+
+  const serviceID = "service_4pqizya";
+  const templateID = "template_zedtjom";
+
+    emailjs.send(serviceID, templateID, params)
+    .then(res=>{
+        
+        document.getElementById("from_email").value = "";
+        
+        console.log(res);
+        alert("Thank you for joining our mailing list. We look forward to updating you about Pinydiit Foundation's work")
+
+    })
+    .catch(err=>console.log(err));
+}
+
+
+
+//News And Events
+$(document).ready(function () {
+  $("#news-slider").owlCarousel({
+    items: 3,
+    itemsDesktop: [1199, 3],
+    itemsDesktopSmall: [980, 2],
+    itemsMobile: [600, 1],
+    navigation: true,
+    navigationText: ["", ""],
+    pagination: true,
+    autoPlay: true
+  });
+});
+
+// News and events Read More Button
 
 

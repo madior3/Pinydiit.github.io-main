@@ -31,16 +31,42 @@
   <script type="text/javascript"
   src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
 </script>
+ <!-- owl carousel Main CSS File -->
+
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.css'>
+<link rel='stylesheet' href='https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'>
+<link rel="stylesheet" href="./style.css">
+
+
+
+<!----contact-->
 <script type="text/javascript">
   (function () {
-    emailjs.init("Vp07gaoszv-erh0FL");
+    emailjs.init("wSoz6nQnGIfLiLaBB");
+  })();
+</script>
+
+<!---subscribe-->
+<script type="text/javascript">
+  (function () {
+    emailjs.init("wSoz6nQnGIfLiLaBB");
   })();
 </script>
 </head>
 
 <body>
   
+<!--==========Preloader==============-->
 
+<div class="preloader">
+  <div class="loader"></div>
+</div>
+
+<div class="content">
+  <!-- Your page content goes here -->
+  <h1>Welcome to My Page!</h1>
+  <p>This is the content of the page.</p>
+</div>
 
   <!-- ======= Top-Bar ======= -->
   <div id="topbar" class="d-flex align-items-center fixed-top">
@@ -51,10 +77,9 @@
         <i class="bi bi-phone"></i> +1605-940-5081 
       </div>
       <div class="d-none d-lg-flex social-links align-items-center">
-        <a href="https://www.facebook.com/william.agany/" class="facebook" target="_blank" rel="noopener noreferrer"><i class="bi bi-facebook"></i></a>
-        <a href="#" class="instagram" target="_blank" rel="noopener noreferrer"><i class="bi bi-instagram"></i></a>
-        <a href="#" class="twitter" target="_blank" rel="noopener noreferrer"><i class="bi bi-twitter"></i></a> 
-        <a href="#" class="youtube" target="_blank" rel="noopener noreferrer"><i class="bi bi-youtube"></i></a>
+        <a href="https://www.facebook.com/profile.php?id=61555936580106" class="facebook" target="_blank" rel="noopener noreferrer"><i class="bi bi-facebook"></i></a>
+        <a href="https://www.instagram.com/pinydiit/" class="instagram" target="_blank" rel="noopener noreferrer"><i class="bi bi-instagram"></i></a>
+        <a href="https://www.youtube.com/channel/UCRlMJcLxBP6lZtt1KXg1ZtA" class="youtube" target="_blank" rel="noopener noreferrer"><i class="bi bi-youtube"></i></a>
       </div>
     </div>
   </div>
@@ -75,8 +100,9 @@
           <li><a class="nav-link scrollto " href="#Our-Programs">Programs</a></li>
           <li><a class="nav-link scrollto" href="#News-Events">News & Events</a></li>
           <li><a class="nav-link scrollto" href="#getinvolved">How To Involve </a></li>
-          <li><a class="nav-link scrollto" href="#Contact">Contact</a></li>
+          
           <li><a class="nav-link scrollto" href="./gallery.html">Gallery</a></li>
+          <li><a class="nav-link scrollto" href="#Contact">Contact Us</a></li>
           
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
@@ -96,7 +122,7 @@
     <div class="Mycontainer">
       <div class="left"></div>
       <div class="right">
-        <div class="content">
+        <div class="content-home">
           <h1>Stationery of opportunities: <span class="color-text">Pinydiit Foundation's</span>  Promise! </h1>
           <p>From stationery to scholarships, we are paving the way for a brighter future.</p>
          <div class="button-container">
@@ -113,6 +139,7 @@
 
     </div>
   </section>
+
 
 
 
@@ -203,7 +230,7 @@
 
 <section class="Who-We-Are" id="Who-We-Are">
   
-  <div class="slide active" id="slide1">
+  <div class="slide active" id="slide1" >
     <div class="text-box">
       <h2>Who We Are</h2>
       <p>
@@ -212,7 +239,7 @@
     </div>
     <img src="./img/background2.jpg" alt="Slide 1">
     <div class="d-flex">
-      <a href="https://www.youtube.com/watch?v=uT35AEN-HHg" class="glightbox btn-watch-video"><i class="bi bi-play-circle"></i><span>Watch video</Video></span></a>
+      <a href="https://youtu.be/Wogh4At81gg" class="glightbox btn-watch-video"><i class="bi bi-play-circle"></i><span>Watch video</Video></span></a>
     </div>
   </div>
 
@@ -244,9 +271,12 @@
   </div>
 
 <!--Used font awesome for prev and next icons-->
-
-  <i class="arrow fa fa-arrow-left" id="prevBtn"></i>
-  <i class="arrow fa fa-arrow-right" id="nextBtn"></i>
+ 
+  <i class="arrow fa fa-angle-right" id="nextBtn"></i>
+  <i class=" arrow fa fa-angle-left" id="prevBtn"></i>
+  
+  
+  
 
 </section>
 
@@ -257,7 +287,7 @@
       <p>Take a look at what we're working on, and find out how you can become involved.</p>
     </div>
 <div class="container">
-    <div class="card">
+    <div class="card shadow-sm border-0">
 
       <div class="image">
          <img src="./img/pinydiit6.jpg">
@@ -273,7 +303,7 @@
       </div>
       <!--cards -->
       
-       <div class="card">
+       <div class="card shadow-sm border-0">
 
       <div class="image">
          <img src="./img/pinydiit1b.jpg">
@@ -286,7 +316,7 @@
        <a href="./index.html#getinvolved" class="getinvolved-bt scrollto"><span class="d-none d-md-inline"></span> How To Get Involve</a>
       </div>
       </div>
-      <div class="card">
+      <div class="card shadow-sm border-0">
       
       <div class="image">
          <img src="./img/pinydiit8.jpg">
@@ -306,6 +336,7 @@
    </section>
 
    <!-- End of Our project Section-->
+   
 
     <!-- ======= News-Events Section ======= -->
     <section id="News-Events" class="News-Events">
@@ -317,58 +348,125 @@
 
           </p>
         </div>
+        <!-- partial:index.partial.html -->
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-12">
+        <div id="news-slider" class="owl-carousel">
 
-        <div class="row">
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
-            <div class="icon-box">
-              <h4><a href=""> Refugee students in Dadaab camps struggle with Kenya’s new schools curriculum</a></h4>
-              <p>(ERGO) – Somali parents and teachers in the refugee camps in Dadaab, northeastern Kenya, are complaining that Kenya’s newly launched curriculum...</p>
-              <a href="https://radioergo.org/en/2023/03/refugee-students-in-dadaab-camps-struggle-with-kenyas-new-schools-curriculum/">Find out more &raquo;</a>
+          <div class="post-slide shadow-sm border-0">
+            <div class="post-img">
+              <img src="https://images.squarespace-cdn.com/content/v1/622788d3e3ba772c3c93eb9c/73a5d47a-87bc-4a9d-8091-01d814791ee1/Female+2+-+Kenya.jpg?format=1000w" alt="">
+              <a href="#" class="over-layer"></a>
+            </div>
+            <div class="post-content">
+              <h3 class="post-title">
+                <a href="https://www.windle.org.uk/views/the-importance-of-education-for-women-and-girls-in-south-sudan">Girls' Education in South Sudan: The Path to Empowerment, Equality, and a Brighter Future</a>
+              </h3>
+              <span class="post-date"><i class="bi bi-calendar4-event"></i>Posted: 19 April</span>
+              <div>
+                <span class="post-source"><i class="bi bi-globe2"></i>Source:</span> <a class="source-link" href="https://www.windle.org.uk/">Windle Trust</a>
+              </div>
+              <p class="post-description">Girls and women need education for personal empowerment; for employment or income generation and overcoming poverty. Girls need education for promoting healthy living for themselves and their families. Yet unfortunately in South Sudan, girls and women are more disadvantaged than boys. Our girls are repeatedly denied the opportunity..</p>
+              <a href="https://www.windle.org.uk/views/the-importance-of-education-for-women-and-girls-in-south-sudan" class="read-more-btn scrollto"><span class="d-none d-md-inline"></span > Read More</a>
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0">
-            <div class="icon-box">
-              <h4><a href="">Edging closer to dreams of becoming a doctor – Fardowsa’s story</a></h4>
-              <p>Seated in the middle of her class, 17-year-old Fardowsa Gedi tries to catch up with an on-going lesson of her favourite subject mathematics..</p>
-              <a href="https://www.unhcr.org/ke/20059-edging-closer-to-dreams-of-becoming-a-doctor-fardowsas-story.html">Find out more &raquo;</a>
+          <div class="post-slide shadow-sm border-0">
+            <div class="post-img">
+              <img src="https://www.unicef.org/southsudan/sites/unicef.org.southsudan/files/styles/hero_extended/public/20210309_Education_DearTeacher_Juba_Naftalin08.jpg.webp?itok=UK_P0Doa" alt="">
+              <a href="#" class="over-layer"></a>
+            </div>
+            <div class="post-content">
+              <h3 class="post-title">
+                <a href="https://www.unicef.org/southsudan/what-we-do/education">Creating solid foundations for the future through quality education</a>
+              </h3>
+              <span class="post-date"><i class="bi bi-calendar4-event"></i>Posted: 12 Dec 2018</span>
+              <div>
+                <span class="post-source"><i class="bi bi-globe2"></i>Source:</span> <a class="source-link" href="https://www.unicef.org/southsudan/">UNICEF-South Sudan</a>
+              </div>
+              <p class="post-description">More than 2.8 million children, or over 70 per cent, are out of school in South Sudan, putting at risk their futures and the future of the country. Some of the out-of-school children are living in pastoral communities, moving with their cattle and are not able to attend regular classes. The largest group of out-of-school children in South Sudan are girls...</p>
+              <a href="https://www.unicef.org/southsudan/what-we-do/education" class="read-more-btn scrollto"><span class="d-none d-md-inline"></span > Read More</a>
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0">
-            <div class="icon-box">
-              <h4><a href="">South Sudan Expands Access to Free Education</a></h4>
-              <p>Last week, South Sudan’s President Salva Kiir directed relevant government ministries to ensure that primary and secondary education is free...</p>
-              <a href="https://www.hrw.org/news/2023/02/14/south-sudan-expands-access-free-education">Find out more &raquo;</a>
+          <div class="post-slide shadow-sm border-0">
+            <div class="post-img">
+              <img src="https://www.newsudanvision.com/files/images/photo_1.png" alt="">
+              <a href="" class="over-layer"></a>
+            </div>
+            <div class="post-content">
+              <h3 class="post-title">
+                <a href="https://www.newsudanvision.com/385-2/">NYUAK USA HOSTS INAUGURAL COMMUNITY REUNION</a>
+              </h3>
+              <span class="post-date"><i class="bi bi-calendar4-event"></i>Posted: 27 April 2019</span>
+              <div>
+                <span class="post-source"><i class="bi bi-globe2"></i>Source:</span> <a class="source-link" href="https://www.newsudanvision.com/">The New Sudan Vision</a>
+              </div>
+              <p class="post-description">In response to an alarming surge in the number of children facing unprecedented humanitarian crises worldwide, UNICEF launched today a US$9.3 billion emergency funding appeal to reach at least 93.7 million children in 155 countries...</p>
+              <a href="https://www.newsudanvision.com/385-2/" class="read-more-btn scrollto"><span class="d-none d-md-inline"></span > Read More</a>
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4">
-            <div class="icon-box">
-              <h4><a href="">South Sudan Education Cluster Factsheet (as of 05-January 2023)</a></h4>
-              <p>The Education Cluster aims to support 866,000 children – 25 per cent of the children in need of education in 2023 – to ensure their access to safe, protective and quality inclusive...</p>
-              <a href="https://reliefweb.int/report/south-sudan/south-sudan-education-cluster-factsheet-05-january-2023">Find out more &raquo;</a>
+          <div class="post-slide shadow-sm border-0">
+            <div class="post-img">
+              <img src="https://www.unicef.org/southsudan/sites/unicef.org.southsudan/files/styles/press_release_feature/public/2019020%20CAAFAG%20Nutrition%20Education%20Pibor_0247.JPG.webp?itok=7Tu1AIYK" alt="">
+              <a href="" class="over-layer"></a>
+            </div>
+            <div class="post-content">
+              <h3 class="post-title">
+                <a href="https://www.unicef.org/southsudan/press-releases/unicef-appeals-us93-billion-emergency-funding-children-living-through-conflicts-and">UNICEF appeals for US$9.3 billion emergency funding for children living through conflicts and crises in an increasingly hostile world</a>
+              </h3>
+              <span class="post-date"><i class="bi bi-calendar4-event"></i>Posted: 12 December 2023</span>
+              <div>
+                <span class="post-source"><i class="bi bi-globe2"></i>Source:</span> <a class="source-link" href="https://www.unicef.org/southsudan/">UNICEF-South Sudan</a>
+              </div>
+              <p class="post-description">In response to an alarming surge in the number of children facing unprecedented humanitarian crises worldwide, UNICEF launched today a US$9.3 billion emergency funding appeal to reach at least 93.7 million children in 155 countries...</p>
+              <a href="https://www.unicef.org/southsudan/press-releases/unicef-appeals-us93-billion-emergency-funding-children-living-through-conflicts-and" class="read-more-btn scrollto"><span class="d-none d-md-inline"></span > Read More</a>
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4">
-            <div class="icon-box">
-              <h4><a href="">Education, conflict and stability in South Sudan</a></h4>
-              <p>Education as a fundamental human right is one of the key principles underpinning the Education 2030 Agenda and Sustainable Development...</p>
-              <a href="https://www.ids.ac.uk/opinions/education-conflict-and-stability-in-south-sudan/#:~:text=Education%20is%20inequitable%20throughout%20the%20country&text=Girls%20face%20greater%20challenges%2C%20with,prioritise%20the%20education%20of%20boys.">Find out more &raquo;</a>
+          <div class="post-slide shadow-sm border-0">
+            <div class="post-img">
+              <img src="https://www.aljazeera.com/wp-content/uploads/2023/09/2023-09-02T090931Z_680633839_UP1EJ920PFT1G_RTRMADP_3_BASKETBALL-WORLDCUP-AGO-SSD-1693649730.jpg?resize=770%2C513&quality=80" alt="">
+              <a href="" class="over-layer"></a>
+            </div>
+            <div class="post-content">
+              <h3 class="post-title">
+                <a href="https://www.aljazeera.com/sports/2023/9/2/basketball-south-sudan-fiba-world-cup">More than basketball’: South Sudan go from underdogs to history-makers</a>
+              </h3>
+              <span class="post-date"><i class="bi bi-calendar4-event"></i>Posted: 2 Sep 2023</span>
+              <div>
+                <span class="post-source"><i class="bi bi-globe2"></i>Source:</span> <a class="source-link" href="https://www.aljazeera.com/">Aljazeera</a>
+              </div>
+              <p class="post-description">Manila, Philippines – South Sudan have shone at the 2023 FIBA World Cup and its basketball dreams aren’t stopping there.
+
+                On Saturday, in the Philippine capital, Manila, the world’s youngest nation secured their first Olympic basketball berth after beating Angola 101-78 to clinch the lone FIBA Africa direct qualification spot at Paris 2024 .....</p>
+              <a href="https://www.aljazeera.com/sports/2023/9/2/basketball-south-sudan-fiba-world-cup" class="read-more-btn scrollto"><span class="d-none d-md-inline"></span > Read More</a>
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4">
-            <div class="icon-box">
-              <h4><a href="">South Sudan - Improving Access and Quality of Basic Education Project (IAQBE)a></h4>
-              <p>The Improving Access and Quality of Basic Education Project (IAQBE) aims to contribute to increasing access to quality primary education... </p>
-              <a href="https://projectsportal.afdb.org/dataportal/VProject/show/P-SS-I00-003%20">Find out more &raquo;</a>
+          <div class="post-slide shadow-sm border-0">
+            <div class="post-img">
+              <img src="https://www.radiotamazuj.org/uploads/cache/article_detail_image/uploads/media/65aa7fa2dc8cd/edc.jpg" alt="">
+              <a href="" class="over-layer"></a>
+            </div>
+            <div class="post-content">
+              <h3 class="post-title">
+                <a href="https://www.radiotamazuj.org/en/news/article/usaid-delivers-grants-to-17-youth-empowerment-organizations-in-wau">USAID delivers grants to 17 youth empowerment organizations in Wau</a>
+              </h3>
+              <span class="post-date"><i class="bi bi-calendar4-event"></i>Posted: 20 JAN 2024</span>
+              <div>
+                <span class="post-source"><i class="bi bi-globe2"></i>Source:</span> <a class="source-link" href="https://www.radiotamazuj.org/en">Radio Tamazuj</a>
+              </div>
+              <p class="post-description">The United States Agency for International Development (USAID), through the Education Development Center (EDC), on Friday handed over multiple in-kind grant items to youth-led and youth-focused organizations in Western Bahr el Ghazal State.
+  
+                The 17 entities that benefited are from the counties of Wau and Jur River...</p>
+              <a href="https://www.radiotamazuj.org/en/news/article/usaid-delivers-grants-to-17-youth-empowerment-organizations-in-wau" class="read-more-btn scrollto"><span class="d-none d-md-inline"></span > Read More</a>
             </div>
           </div>
-
         </div>
-
+        </div>
       </div>
     </section><!-- End News-Events Section -->
 
@@ -376,10 +474,10 @@
    
        <!--=============== Start Get Involve=============================-->
    
-       <body class="">
-        <main>
+       
+        
               
-            <section id="getinvolved">
+    <section id="getinvolved">
                 <div class="container py-2">
                   <div class="section-title">
                     <h2>How To Involve</h2>
@@ -414,7 +512,7 @@
                                   <div class="user-content">
                                       <h5 class="text-capitalize user-name  blockquote-footer">Donate by Check or Wire Transfer</h5>
                                       
-                                      <p class="small text-muted mb-0">Make checks payable to: Pinydiit Foundation 68122,N 107 Plaza To send a donation via wire transfer, email <a href="mailto:pinydiitfoundation@gmail.com" class="contact-email" target="_blank">pinydiitfoundation@gmail.com</a> or <a href="mailto:pf@pinydiitfoundation.org" class="contact-email" target="_blank">pf@pinydiitfoundation.org</a> for instructions.</p>
+                                      <p class="small text-muted mb-0">Make checks payable to Pinydiit Foundation or send a donation via wire transfer, email<a href="mailto:pinydiitfoundation@gmail.com" class="contact-email" target="_blank">pinydiitfoundation@gmail.com</a> or <a href="mailto:pf@pinydiitfoundation.org" class="contact-email" target="_blank">pf@pinydiitfoundation.org</a> for instructions.</p>
                                   </div>
                                   
                               </div>
@@ -428,12 +526,12 @@
                                       <img src="./img/statistics_.png" />
                                   </div>
                                   <div class="user-content">
-                                      <h5 class="text-capitalize user-name  blockquote-footer">Donate Stock</h5>
+                                      <h5 class="text-capitalize user-name  blockquote-footer">Donate Items</h5>
                                       
-                                      <p class="small text-muted mb-0">Donate stocks by either making a stock gift or by contacting <a href="mailto:pinydiitfoundation@gmail.com" class="contact-email" target="_blank">pinydiitfoundation@gmail.com</a> or <a href="mailto:pf@pinydiitfoundation.org" class="contact-email" target="_blank">pf@pinydiitfoundation.org</a> to explore alternative stock giving options.</p>
+                                      <p class="small text-muted mb-0">Donate Item Gifts by contacting <a href="mailto:pinydiitfoundation@gmail.com" class="contact-email" target="_blank">pinydiitfoundation@gmail.com</a> or <a href="mailto:pf@pinydiitfoundation.org" class="contact-email" target="_blank">pf@pinydiitfoundation.org</a> to explore alternative Items giving options.</p>
                                   </div>
                                   <br>
-                                  <a href="./index.html#getinvolved" class="getinvolved-bt scrollto"><span class="d-none d-md-inline"></span> Donate Stock</a>
+                                  
                               </div>
                               
                           </div>
@@ -564,11 +662,10 @@
                 <strong>Phone:</strong> +1605-940-5081<br>
                 <strong>Email:</strong> pf@pinydiitfoundation.org<br> OR pinydiitfoundation@gmail.com
               </p>
-              <div class="social-links mt-3">
-                <a href="https://www.facebook.com/william.agany/" class="facebook"><i class="bx bxl-facebook"></i></a>
-                <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
-                <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
-                <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+              <div class="d-none d-lg-flex social-links align-items-center">
+                <a href="https://www.facebook.com/profile.php?id=61555936580106" class="facebook" target="_blank" rel="noopener noreferrer"><i class="bi bi-facebook"></i></a>
+                <a href="https://www.instagram.com/pinydiit/" class="instagram" target="_blank" rel="noopener noreferrer"><i class="bi bi-instagram"></i></a>
+                <a href="https://www.youtube.com/channel/UCRlMJcLxBP6lZtt1KXg1ZtA" class="youtube" target="_blank" rel="noopener noreferrer"><i class="bi bi-youtube"></i></a>
               </div>
             </div>
           </div>
@@ -595,10 +692,17 @@
           <div class="col-lg-4 col-md-6 footer-newsletter">
             <h4>Our Newsletter</h4>
             <p>Thank you for your continued support, and we look forward to sharing our progress with you in the coming months.</p>
-            <form action="mail.php" method="POST"  autocomplete="on">
-              <input type="email" name="email" placeholder="Please Enter Your Email"><input type="submit" value="Subscribe">
-            </form>
-            <p><span>Thank You For Subscribing!</span></p>
+            
+            <div class="form-group" autocomplete="on">
+              <h5 for="from_email"></h5>
+              <input
+                type="from_email"
+                class="form-control"
+                id="from_email"
+                placeholder="Please enter your email"
+              />
+            </div>
+            <button class="submit-btn1" onclick="sendMail()">Subscribe</button>
 
           </div>
 
@@ -630,6 +734,11 @@
    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
   <script src="lightbox2/dist/js/lightbox.min.js"></script>
   <script src="js/main.js"></script>
+
+    <!-- partial -->
+    <script src='https://code.jquery.com/jquery-1.12.0.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js'></script>
+    <script src="./script.js"></script>
 
 </body>
 
