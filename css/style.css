@@ -685,10 +685,11 @@ section {
 /*--------------------------------------------------------------
 # Who-We-Are Section
 --------------------------------------------------------------*/
+
 .Mycontainer {
   padding: 7.5rem;
   width: 100%;
-  margin: 0 auto;
+  margin: 0 ;
   flex-direction: row;
   display: flex;
   justify-content: center;
